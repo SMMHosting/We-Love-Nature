@@ -2,15 +2,15 @@
 
 const images = document.querySelectorAll('.img');
 
-images.forEach((image) => {
-  image.addEventListener('click', () => {
+images.forEach((pic) => {
+  pic.addEventListener('click', () => {
     removeClass();
-    image.classList.add('active');
+    pic.classList.add('active');
   });
 });
 
 const removeClass = () => {
-  images.forEach((image) => {
-    image.classList.remove('active');
+  images.forEach((pic) => {
+    pic.classList.remove('active');
   });
 };
